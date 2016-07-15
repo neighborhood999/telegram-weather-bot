@@ -1,24 +1,14 @@
 import TelegramBot from 'node-telegram-bot-api';
 import format from 'date-fns/format';
+import config from '../config';
 import getWeather from './api/getWeather';
 import windDirection from './utils/windDirection';
 import getForecast from './utils/getForecast';
+import { today, fiveDays } from './utils/keyboard';
 import { startMessage, weatherTemplate, helpMessage } from './template';
 
-const token = 'Your token';
+const { token } = config;
 const bot = new TelegramBot(token, { polling: true });
-const fiveDays = JSON.stringify({
-  inline_keyboard: [[{
-    text: '未來一週天氣',
-    callback_data: 'forecast'
-  }]]
-});
-const today = JSON.stringify({
-  inline_keyboard: [[{
-    text: '今日天氣狀況',
-    callback_data: 'today'
-  }]]
-});
 let todayWeatherInfo;
 let forecastInfo;
 
@@ -98,7 +88,7 @@ bot.on('location', (message) => {
   })
   .catch(err => {
     if (err.name === 'TypeError') {
-      bot.sendMessage(fromId, 'API 錯誤，請重新定位嘗試！');
+      bot.sendMessage(fromId, 'API 錯誤，請嘗試重新定位！');
     }
   });
 });
