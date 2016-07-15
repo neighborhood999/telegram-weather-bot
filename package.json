@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "test": "ava -v",
+    "test:cov": "NODE_ENV=test nyc npm test"
   },
   "keywords": [
     "telegram",
@@ -14,14 +16,28 @@
     "weather"
   ],
   "author": "Peng-Jie <dean.leehom@gmail.com> (https://github.com/neighborhood999)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neighborhood999/telegram-weather-bot"
+  },
+  "ava": {
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ],
+    "files": "test/**/*.spec.js",
+    "babel": "inherit"
+  },
   "devDependencies": {
+    "ava": "^0.15.2",
     "babel-cli": "^6.10.1",
     "babel-eslint": "^6.0.4",
     "babel-polyfill": "^6.9.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.9.0",
-    "eslint": "^2.13.1"
+    "eslint": "^2.13.1",
+    "nyc": "^7.0.0"
   },
   "dependencies": {
     "date-fns": "^1.3.0",
