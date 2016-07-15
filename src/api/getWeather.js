@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import fetch from 'isomorphic-fetch';
 
 const getWeatherInfo = (query, u = 'c') => {
