@@ -13,19 +13,19 @@ let todayWeatherInfo;
 let forecastInfo;
 
 bot.onText(/\/start/, (message) => {
-  const fromId = message.from.id;
+  const chatId = message.chat.id;
 
-  return bot.sendMessage(fromId, startMessage, { parse_mode: 'markdown' });
+  return bot.sendMessage(chatId, startMessage, { parse_mode: 'markdown' });
 });
 
 bot.onText(/\/help/, (message) => {
-  const fromId = message.from.id;
+  const chatId = message.chat.id;
 
-  return bot.sendMessage(fromId, helpMessage, { parse_mode: 'markdown' });
+  return bot.sendMessage(chatId, helpMessage, { parse_mode: 'markdown' });
 });
 
 bot.onText(/\location/, (message) => {
-  const fromId = message.from.id;
+  const chatId = message.chat.id;
   const text = '按下按鈕取得定位！';
   const replyMarkup = JSON.stringify({
     keyboard: [[{
@@ -38,15 +38,15 @@ bot.onText(/\location/, (message) => {
     one_time_keyboard: true
   });
 
-  return bot.sendMessage(fromId, text, { reply_markup: replyMarkup, parse_mode: 'markdown' });
+  return bot.sendMessage(chatId, text, { reply_markup: replyMarkup, parse_mode: 'markdown' });
 });
 
 bot.onText(/\/where( (.+))?/, (message, match) => {
-  const fromId = message.from.id;
+  const chatId = message.chat.id;
   const city = match[1];
 
   if (match[1] === undefined) {
-    bot.sendMessage(fromId, '請輸入要查詢的位置！');
+    bot.sendMessage(chatId, '請輸入要查詢的位置！');
     return;
   }
 
@@ -61,17 +61,17 @@ bot.onText(/\/where( (.+))?/, (message, match) => {
     return message;
   })
   .then(message => {
-    bot.sendMessage(fromId, message, { reply_markup: fiveDays, parse_mode: 'markdown' });
+    bot.sendMessage(chatId, message, { reply_markup: fiveDays, parse_mode: 'markdown' });
   })
   .catch(err => {
     if (err.name === 'TypeError') {
-      bot.sendMessage(fromId, 'API 錯誤，請重新嘗試！');
+      bot.sendMessage(chatId, 'API 錯誤，請重新嘗試！');
     }
   });
 });
 
 bot.on('location', (message) => {
-  const fromId = message.from.id;
+  const chatId = message.chat.id;
 
   getWeather(message.location).then(response => {
     const direction = windDirection(response.wind.direction);
@@ -84,11 +84,11 @@ bot.on('location', (message) => {
     return message;
   })
   .then(res => {
-    bot.sendMessage(fromId, res, { reply_markup: fiveDays, parse_mode: 'markdown' });
+    bot.sendMessage(chatId, res, { reply_markup: fiveDays, parse_mode: 'markdown' });
   })
   .catch(err => {
     if (err.name === 'TypeError') {
-      bot.sendMessage(fromId, 'API 錯誤，請嘗試重新定位！');
+      bot.sendMessage(chatId, 'API 錯誤，請嘗試重新定位！');
     }
   });
 });
