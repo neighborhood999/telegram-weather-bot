@@ -8,8 +8,9 @@
 
 # Usage
 
-Setting your token get from [@BotFather](https://telegram.me/BotFather) in `config.js`, then running:
+Send `/newbot` command to [@BotFather](https://telegram.me/BotFather) make new Bot, and you will get token.  
 
+Setting token in `config.js`, then running:
 ```sh
 $ npm install
 $ npm start
@@ -33,8 +34,12 @@ $ npm run lint
 
 # Weather API
 
-☀ [Yahoo Weather](https://developer.yahoo.com/weather/)
+☀️ [Yahoo Weather](https://developer.yahoo.com/weather/)
+
+# Related
+
+[Telegram Bot 開發起手式](http://neighborhood999.github.io/2016/07/19/Develop-telegram-bot/)
 
 # LICENSE
 
-[Peng-Jie](https://github.com/neighborhood999) © MIT
+[Peng Jie](https://github.com/neighborhood999) © MIT
