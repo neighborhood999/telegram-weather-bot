@@ -1,14 +1,16 @@
 # Telegram Weather Bot
 
-[![Build Status](https://travis-ci.org/neighborhood999/telegram-weather-bot.svg?branch=patch-1)](https://travis-ci.org/neighborhood999/telegram-weather-bot)
-[![Coverage Status](https://coveralls.io/repos/github/neighborhood999/telegram-weather-bot/badge.svg?branch=master)](https://coveralls.io/github/neighborhood999/telegram-weather-bot?branch=master)
-[![Dependency Status](https://david-dm.org/neighborhood999/telegram-weather-bot.svg)](https://david-dm.org/neighborhood999/telegram-weather-bot)
+[![Build Status](https://img.shields.io/travis/neighborhood999/telegram-weather-bot.svg?style=flat-square)](https://travis-ci.org/neighborhood999/telegram-weather-bot)
+[![Coverage Status](https://img.shields.io/coveralls/neighborhood999/telegram-weather-bot/master.svg?style=flat-square)](https://coveralls.io/github/neighborhood999/telegram-weather-bot?branch=master)
+[![Dependency Status](https://david-dm.org/neighborhood999/telegram-weather-bot.svg?style=flat-square)](https://david-dm.org/neighborhood999/telegram-weather-bot)
 
 > P.J Weather Telegram Bot: https://telegram.me/PjWeatherBOT
 
 # Usage
 
-Send `/newbot` command to [@BotFather](https://telegram.me/BotFather) make new Bot, and you will get token.  
+**First, You need have telegram account!**  
+
+Add [@BotFather](https://telegram.me/BotFather) and send `/newbot` command to make new Bot, then you will get bot token.  
 
 Setting token in `config.js`, then running:
 ```sh
