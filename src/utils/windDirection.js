@@ -1,12 +1,12 @@
 const windObj = {
-  0: '無風',
+  0: '無',
   45: '東北',
   90: '東',
   135: '東南',
   180: '南',
   225: '西南',
   270: '西',
-  325: '西北',
+  315: '西北',
   360: '北'
 };
 
@@ -23,6 +23,8 @@ const windDirection = (input) => {
   const direction = guessDirection(input);
 
   if (windObj[input]) return `${windObj[input]}風`;
+  if ((direction - 45) < 45) return `${windObj[direction]}偏北風`;
+
   return `${windObj[direction]}偏${windObj[direction - 45]}風`;
 };
 
