@@ -11,4 +11,9 @@ test('should get wind direction text', t => {
   const expectedDirection2 = '西風';
 
   t.is(windDirection(inputDegree2), expectedDirection2);
+
+  const inputDegree3 = '23';
+  const expectedDirection3 = '東北偏北風';
+
+  t.is(windDirection(inputDegree3), expectedDirection3);
 });
