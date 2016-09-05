@@ -6,7 +6,7 @@
 
 > P.J Weather Telegram Bot: https://telegram.me/PjWeatherBOT
 
-# Usage
+## Usage
 
 **First, You need have telegram account!**  
 
@@ -18,30 +18,31 @@ $ npm install
 $ npm start
 ```
 
-# Screenshot
+## Screenshot
 
 ![telegram-weather-bot](./screenshot/tg-weather-bot.jpg)
 
-# Test
+## Test
 
 ```sh
 $ npm test
 ```
 
-# Lint
+## Lint
 
 ```sh
 $ npm run lint
 ```
 
-# Weather API
+## Weather API
 
 ☀️ [Yahoo Weather](https://developer.yahoo.com/weather/)
 
-# Related
+## Related
 
-[Telegram Bot 開發起手式](http://neighborhood999.github.io/2016/07/19/Develop-telegram-bot/)
+- [Telegram Bot 開發起手式](http://neighborhood999.github.io/2016/07/19/Develop-telegram-bot/)
+- [Go Telegram Weather Bot](https://github.com/neighborhood999/go-telegram-weather-bot)
 
-# LICENSE
+## LICENSE
 
 [Peng Jie](https://github.com/neighborhood999) © MIT
