@@ -12,10 +12,9 @@
 
 Add [@BotFather](https://telegram.me/BotFather) and send `/newbot` command to make new Bot, then you will get bot token.  
 
-Setting token in `config.js`, then running:
+Setting token in `config.js`, then running `yarn` install dependencies:
 ```sh
-$ npm install
-$ npm start
+$ yarn start
 ```
 
 ## Screenshot
@@ -25,13 +24,13 @@ $ npm start
 ## Test
 
 ```sh
-$ npm test
+$ yarn test
 ```
 
 ## Lint
 
 ```sh
-$ npm run lint
+$ yarn lint
 ```
 
 ## Weather API
@@ -45,4 +44,4 @@ $ npm run lint
 
 ## LICENSE
 
-[Peng Jie](https://github.com/neighborhood999) © MIT
+MIT © [Peng Jie](https://github.com/neighborhood999)
