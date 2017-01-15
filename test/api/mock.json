@@ -1,0 +1,149 @@
+{
+ "query": {
+  "count": 1,
+  "created": "2017-01-15T13:44:43Z",
+  "lang": "zh-TW",
+  "results": {
+   "channel": {
+    "units": {
+     "distance": "mi",
+     "pressure": "in",
+     "speed": "mph",
+     "temperature": "F"
+    },
+    "title": "Yahoo! Weather - Taichung City, Taichung City, TW",
+    "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2306181/",
+    "description": "Yahoo! Weather for Taichung City, Taichung City, TW",
+    "language": "en-us",
+    "lastBuildDate": "Sun, 15 Jan 2017 09:44 PM CST",
+    "ttl": "60",
+    "location": {
+     "city": "Taichung City",
+     "country": "Taiwan",
+     "region": " Taichung City"
+    },
+    "wind": {
+     "chill": "54",
+     "direction": "270",
+     "speed": "0"
+    },
+    "atmosphere": {
+     "humidity": "100",
+     "pressure": "914.0",
+     "rising": "0",
+     "visibility": "5.1"
+    },
+    "astronomy": {
+     "sunrise": "6:42 am",
+     "sunset": "5:30 pm"
+    },
+    "image": {
+     "title": "Yahoo! Weather",
+     "width": "142",
+     "height": "18",
+     "link": "http://weather.yahoo.com",
+     "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+    },
+    "item": {
+     "title": "Conditions for Taichung City, Taichung City, TW at 09:00 PM CST",
+     "lat": "24.238131",
+     "long": "120.895279",
+     "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2306181/",
+     "pubDate": "Sun, 15 Jan 2017 09:00 PM CST",
+     "condition": {
+      "code": "29",
+      "date": "Sun, 15 Jan 2017 09:00 PM CST",
+      "temp": "53",
+      "text": "Partly Cloudy"
+     },
+     "forecast": [
+      {
+       "code": "12",
+       "date": "15 Jan 2017",
+       "day": "Sun",
+       "high": "59",
+       "low": "51",
+       "text": "Rain"
+      },
+      {
+       "code": "30",
+       "date": "16 Jan 2017",
+       "day": "Mon",
+       "high": "62",
+       "low": "51",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "30",
+       "date": "17 Jan 2017",
+       "day": "Tue",
+       "high": "62",
+       "low": "48",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "34",
+       "date": "18 Jan 2017",
+       "day": "Wed",
+       "high": "64",
+       "low": "48",
+       "text": "Mostly Sunny"
+      },
+      {
+       "code": "34",
+       "date": "19 Jan 2017",
+       "day": "Thu",
+       "high": "65",
+       "low": "50",
+       "text": "Mostly Sunny"
+      },
+      {
+       "code": "34",
+       "date": "20 Jan 2017",
+       "day": "Fri",
+       "high": "62",
+       "low": "48",
+       "text": "Mostly Sunny"
+      },
+      {
+       "code": "34",
+       "date": "21 Jan 2017",
+       "day": "Sat",
+       "high": "57",
+       "low": "47",
+       "text": "Mostly Sunny"
+      },
+      {
+       "code": "39",
+       "date": "22 Jan 2017",
+       "day": "Sun",
+       "high": "58",
+       "low": "45",
+       "text": "Scattered Showers"
+      },
+      {
+       "code": "34",
+       "date": "23 Jan 2017",
+       "day": "Mon",
+       "high": "61",
+       "low": "46",
+       "text": "Mostly Sunny"
+      },
+      {
+       "code": "30",
+       "date": "24 Jan 2017",
+       "day": "Tue",
+       "high": "62",
+       "low": "48",
+       "text": "Partly Cloudy"
+      }
+     ],
+     "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/29.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Partly Cloudy\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Sun - Rain. High: 59Low: 51\n<BR /> Mon - Partly Cloudy. High: 62Low: 51\n<BR /> Tue - Partly Cloudy. High: 62Low: 48\n<BR /> Wed - Mostly Sunny. High: 64Low: 48\n<BR /> Thu - Mostly Sunny. High: 65Low: 50\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2306181/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)\n<BR />\n]]>",
+     "guid": {
+      "isPermaLink": "false"
+     }
+    }
+   }
+  }
+ }
+}
