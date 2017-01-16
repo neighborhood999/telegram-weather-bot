@@ -7,8 +7,13 @@ const getWeatherInfo = (query, u = 'c') => {
 
   return fetch(api)
     .then(response => response.json())
-    .then(json => json.query.results.channel)
-    .catch(err => console.log(err));
+    .then(json => {
+      if (json['error']) {
+        throw json;
+      }
+
+      return json.query.results.channel;
+    });
 };
 
 const getWeather = async (city) => {
