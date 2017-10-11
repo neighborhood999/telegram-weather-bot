@@ -9,7 +9,7 @@ export const helpMessage = `
 或者輸入 \`/where cityName\` 來尋找該地區的天氣資訊。
 `;
 
-export const weatherTemplate = (response, date, time, direction) => (
+export const weatherTemplate = (response, date, time, direction) =>
   `🚩 *${response.location.city}*
   - - - - - - - - - - - - - - - - - - - - - -
   🕘 目前時間 ➡️ ${time}
@@ -23,12 +23,10 @@ export const weatherTemplate = (response, date, time, direction) => (
   🌄 日落時間 ➡️ ${response.astronomy.sunset}
 
   詳細資訊 🔍 [Yahoo Weather](${response.link})
-  `
-);
+  `;
 
-export const forecastTemplate = (text, link) => (
+export const forecastTemplate = (text, link) =>
   `☀️ 未來一週天氣
   ${text}
 
-  詳細資訊 🔍 [Yahoo Weather](${link})`
-);
+  詳細資訊 🔍 [Yahoo Weather](${link})`;
