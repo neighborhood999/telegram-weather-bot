@@ -10,20 +10,20 @@ const windObj = {
   360: '北'
 };
 
-const guessDirection = (input) => {
+const guessDirection = input => {
   const keyArray = Object.keys(windObj);
-  const filtered = keyArray.filter((value) => {
+  const filtered = keyArray.filter(value => {
     return value >= parseInt(input);
   });
 
   return filtered[0];
 };
 
-const windDirection = (input) => {
+const windDirection = input => {
   const direction = guessDirection(input);
 
   if (windObj[input]) return `${windObj[input]}風`;
-  if ((direction - 45) < 45) return `${windObj[direction]}偏北風`;
+  if (direction - 45 < 45) return `${windObj[direction]}偏北風`;
 
   return `${windObj[direction]}偏${windObj[direction - 45]}風`;
 };

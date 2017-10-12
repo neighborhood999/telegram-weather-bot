@@ -1,7 +1,7 @@
 const weatherCode = {
   0: { text: 'tornado', icon: '🌪' },
   1: { text: 'tropical storm', icon: '💨' },
-  2: { text: 'hurricane', icon: '💨'},
+  2: { text: 'hurricane', icon: '💨' },
   3: { text: 'severe thunderstorms', icon: '⛈' },
   4: { text: 'thunderstorms', icon: '⛈' },
   5: { text: 'mixed rain and snow', icon: '🌨' },
@@ -22,20 +22,20 @@ const weatherCode = {
   20: { text: 'foggy', icon: '🌫' },
   21: { text: 'haze', icon: '🌫' },
   22: { text: 'smoky', icon: '🌫' },
-  23: { text:'blustery', icon: '💨' },
-  24: { text:'windy', icon: '💨' },
-  25: { text:'cody', icon: '❄️' },
-  26: { text:'cloudy', icon: '☁️' },
-  27: { text:'mostly cloudy (night)', icon: '☁️' },
-  28: { text:'mostly cloudy (day)', icon: '🌥' },
-  29: { text:'partly cloudy (night)', icon: '☁️' },
-  30: { text:'partly cloudy (day)', icon: '⛅️' },
-  31: { text:'clear (night)', icon: '🌙' },
-  32: { text:'sunny', icon: '☀️' },
-  33: { text:'fair (night)', icon: '🌙' },
-  34: { text:'fair (day)', icon: '🌤' },
+  23: { text: 'blustery', icon: '💨' },
+  24: { text: 'windy', icon: '💨' },
+  25: { text: 'cody', icon: '❄️' },
+  26: { text: 'cloudy', icon: '☁️' },
+  27: { text: 'mostly cloudy (night)', icon: '☁️' },
+  28: { text: 'mostly cloudy (day)', icon: '🌥' },
+  29: { text: 'partly cloudy (night)', icon: '☁️' },
+  30: { text: 'partly cloudy (day)', icon: '⛅️' },
+  31: { text: 'clear (night)', icon: '🌙' },
+  32: { text: 'sunny', icon: '☀️' },
+  33: { text: 'fair (night)', icon: '🌙' },
+  34: { text: 'fair (day)', icon: '🌤' },
   35: { text: 'mixed rain and hail', icon: '🌧' },
-  36: { text:'hot', icon: '☀️' },
+  36: { text: 'hot', icon: '☀️' },
   37: { text: 'isolated thunderstorms', icon: '⛈' },
   38: { text: 'scattered thunderstorms', icon: '⛈' },
   39: { text: 'scattered thunderstorms', icon: '⛈' },
@@ -43,14 +43,14 @@ const weatherCode = {
   41: { text: 'heavy snow', icon: '🌨' },
   42: { text: 'scattered snow showers', icon: '🌨' },
   43: { text: 'heavy snow', icon: '🌨' },
-  44: { text:'partly cloudy', icon: '⛅️' },
+  44: { text: 'partly cloudy', icon: '⛅️' },
   45: { text: 'thundershowers', icon: '⛈' },
   46: { text: 'snow showers', icon: '🌨' },
   47: { text: 'isolated thundershowers', icon: '⛈' },
   3200: { text: 'not available', icon: '🈚️' }
 };
 
-const weaterEmoji = (code) => {
+const weaterEmoji = code => {
   return weatherCode[code].icon;
 };
 

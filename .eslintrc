@@ -1,13 +1,19 @@
 {
   "parser": "babel-eslint",
-  "extends": "eslint:recommended",
   "env": {
-    "es6": true,
-    "browser": true,
-    "node": true
+    "browser": false,
+    "node": true,
+    "es6": true
   },
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
   "rules": {
-    "no-console": 1,
-    "semi": 2
+    "prettier/prettier": [
+      "error",
+      {
+        "bracketSpacing": true,
+        "singleQuote": true
+      }
+    ]
   }
 }

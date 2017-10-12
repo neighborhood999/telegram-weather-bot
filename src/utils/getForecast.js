@@ -2,7 +2,7 @@ import format from 'date-fns/format';
 import weatherEmoji from './weatherCode';
 import { forecastTemplate } from '../template';
 
-const getForecast = (response) => {
+const getForecast = response => {
   let text = [];
   let fiveDayForecast = '';
   let result;
@@ -18,7 +18,7 @@ const getForecast = (response) => {
 
     return text.push(message);
   });
-  text.map(day => fiveDayForecast += `${day} \n`);
+  text.map(day => (fiveDayForecast += `${day} \n`));
   result = forecastTemplate(fiveDayForecast, response.link);
 
   return result;

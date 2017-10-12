@@ -1,12 +1,13 @@
 {
   "name": "telegram-weather-bot",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Telegram Bot for search your location weather.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "lint": "eslint src",
-    "test": "ava -v",
+    "format": "eslint src --fix",
+    "test": "npm run lint && ava -v",
     "test:cov": "NODE_ENV=test nyc npm test"
   },
   "keywords": [
@@ -29,19 +30,22 @@
     "babel": "inherit"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
-    "babel-cli": "^6.18.0",
-    "babel-eslint": "^7.1.1",
-    "babel-polyfill": "^6.20.0",
-    "babel-preset-env": "^1.1.8",
-    "babel-register": "^6.18.0",
-    "eslint": "^3.11.1",
-    "nyc": "^10.0.0"
+    "ava": "^0.22.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.8.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "nyc": "^11.2.1",
+    "prettier": "^1.7.4"
   },
   "dependencies": {
-    "date-fns": "^1.25.0",
+    "date-fns": "^1.28.5",
     "isomorphic-fetch": "^2.2.1",
-    "node-telegram-bot-api": "^0.25.0"
+    "node-telegram-bot-api": "^0.28.0"
   },
   "license": "MIT"
 }
