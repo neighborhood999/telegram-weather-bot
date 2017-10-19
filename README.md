@@ -10,9 +10,12 @@
 
 **First, You need have telegram account!**  
 
-Add [@BotFather](https://telegram.me/BotFather) and send `/newbot` command to make new Bot, then you will get bot token.  
+- Create a new bot by [@BotFather](https://telegram.me/BotFather), please reference [Botherfather command](https://core.telegram.org/bots#botfather-commands) to create a bot.
 
-Setting token in `config.js`, then running `yarn` install dependencies:
+- Create a `.env` file and fill in your token, see `.env-example`.
+
+- Install Dependencies
+
 ```sh
 $ yarn start
 ```
@@ -41,6 +44,7 @@ $ yarn lint
 
 - [Telegram Bot 開發起手式](http://neighborhood999.github.io/2016/07/19/Develop-telegram-bot/)
 - [Go Telegram Weather Bot](https://github.com/neighborhood999/go-telegram-weather-bot)
+- [Telegram Cafe Nomad](https://github.com/neighborhood999/telegram-cafe-nomad)
 
 ## LICENSE
 

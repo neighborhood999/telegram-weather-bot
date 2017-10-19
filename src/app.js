@@ -1,14 +1,13 @@
 import TelegramBot from 'node-telegram-bot-api';
 import format from 'date-fns/format';
-import config from '../config';
 import getWeather from './api/getWeather';
 import windDirection from './utils/windDirection';
 import getForecast from './utils/getForecast';
 import { today, fiveDays } from './utils/keyboard';
 import { startMessage, weatherTemplate, helpMessage } from './template';
 
-const { token } = config;
-const bot = new TelegramBot(token, { polling: true });
+const { parsed: { TOKEN } } = require('dotenv').config();
+const bot = new TelegramBot(TOKEN, { polling: true });
 let todayWeatherInfo;
 let forecastInfo;
 
