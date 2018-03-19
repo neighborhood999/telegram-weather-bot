@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import fetch from 'isomorphic-fetch';
+import fetch from 'isomorphic-unfetch';
 
 const getWeatherInfo = (query, u = 'c') => {
   const arg =
